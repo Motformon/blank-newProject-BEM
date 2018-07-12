@@ -11,13 +11,25 @@
 	color: #fff;
 }
 
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
 body {
-	font-size: 10px;
-	min-width: 320px;
+	//min-width: 320px;
 	position: relative;
 	line-height: 1.65;
 	font-family: $default-font;
-	overflow-x: hidden;
+	//overflow-x: hidden;
+	box-sizing: border-box;
 	input, textarea {
 		border: #666 1px solid;
 		outline: none;
@@ -39,14 +51,14 @@ body {
 	}
 }
 
-.text-center {
-	text-align: center;
-}
 
 b, strong {
 	font-weight: bold;
 }
 
 
+@import "_components";	//components
 
-@import "media"; // Always at the end
+
+
+@import "_blocks/header"; // blocks

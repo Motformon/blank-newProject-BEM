@@ -6,10 +6,46 @@ $default-font: "roboto-example", sans-serif;
 
 $accent: orange;
 
-// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
-$grid-gutter-width: 30px;
-$grid-columns: 12;
-$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
-$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
 
-$gutter: $grid-gutter-width;
+//  Media 
+
+// &__class {
+// 	 @media #{$m1160} {
+// 		 .....
+// 	}
+// }
+
+$m1750: 'screen and (max-width: 1750px)';
+$m1680: 'screen and (max-width: 1680px)';
+$m1650: 'screen and (max-width: 1650px)';
+$m1600: 'screen and (max-width: 1600px)';
+$m1440: 'screen and (max-width: 1440px)';
+$m1400: 'screen and (max-width: 1400px)';
+$m1366: 'screen and (max-width: 1366px)';
+$m1300: 'screen and (max-width: 1300px)';
+$m1280: 'screen and (max-width: 1280px)';
+$m1250: 'screen and (max-width: 1250px)';
+$m1200: 'screen and (max-width: 1200px)';
+$m1160: 'screen and (max-width: 1160px)';
+$m1024: 'screen and (max-width: 1024px)';
+$m900:  'screen and (max-width: 900px)';
+$m839:  'screen and (max-width: 839px)';
+$m768:  'screen and (max-width: 768px)';
+$m700:  'screen and (max-width: 700px)';
+$m600:  'screen and (max-width: 600px)';
+$m480:  'screen and (max-width: 480px)';
+$m450:  'screen and (max-width: 450px)';
+$m419:  'screen and (max-width: 419px)';
+$m400:  'screen and (max-width: 400px)';
+$m380:  'screen and (max-width: 380px)';
+$m320:  'screen and (max-width: 320px)';
+
+
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+// $grid-gutter-width: 30px;
+// $grid-columns: 12;
+// $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+// $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+// $gutter: $grid-gutter-width;
