@@ -1,4 +1,15 @@
-		//Buttons
+	
+.wrapper {
+		width: 1200px;
+		margin-right: auto;
+		margin-left: auto;
+		@include respond(1200) {
+			width: 100%;
+		}
+	}
+	
+	
+	//Buttons
 
 @mixin button-reset {
 	padding: 0;

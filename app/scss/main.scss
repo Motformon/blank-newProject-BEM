@@ -20,13 +20,19 @@
 }
 
 html {
-	font-size: 62.5%;
+	font-size: 62.5%; //10px
+	@include respond(900) {
+		font-size: 56.25%; //9px
+	}
+	@include respond(600) {
+		font-size: 50%; //8px
+	}
 }
 
 body {
 	//min-width: 320px;
 	position: relative;
-	line-height: 1.65;
+	line-height: 1.4;
 	font-family: $default-font;
 	//overflow-x: hidden;
 	box-sizing: border-box;
@@ -42,15 +48,6 @@ body {
 	}
 }
 
-.img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	&.img-width {
-		width: 100%;
-	}
-}
-
 
 b, strong {
 	font-weight: bold;
@@ -59,6 +56,10 @@ b, strong {
 
 @import "_components";	//components
 
+// blocks
+
+@import "_blocks/header"; //Start 
 
 
-@import "_blocks/header"; // blocks
+
+@import "_blocks/footer"; //End

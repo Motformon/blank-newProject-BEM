@@ -3,42 +3,39 @@
 
 $default-font: "roboto-example", sans-serif;
 
+$accent: #5AB613;
+$text: #616974;
 
-$accent: orange;
 
+	//  Media 
 
-//  Media 
-
-// &__class {
-// 	 @media #{$m1160} {
-// 		 .....
-// 	}
+// @include respond(480) {
+// 	padding: 0;
 // }
 
-$m1750: 'screen and (max-width: 1750px)';
-$m1680: 'screen and (max-width: 1680px)';
-$m1650: 'screen and (max-width: 1650px)';
-$m1600: 'screen and (max-width: 1600px)';
-$m1440: 'screen and (max-width: 1440px)';
-$m1400: 'screen and (max-width: 1400px)';
-$m1366: 'screen and (max-width: 1366px)';
-$m1300: 'screen and (max-width: 1300px)';
-$m1280: 'screen and (max-width: 1280px)';
-$m1250: 'screen and (max-width: 1250px)';
-$m1200: 'screen and (max-width: 1200px)';
-$m1160: 'screen and (max-width: 1160px)';
-$m1024: 'screen and (max-width: 1024px)';
-$m900:  'screen and (max-width: 900px)';
-$m839:  'screen and (max-width: 839px)';
-$m768:  'screen and (max-width: 768px)';
-$m700:  'screen and (max-width: 700px)';
-$m600:  'screen and (max-width: 600px)';
-$m480:  'screen and (max-width: 480px)';
-$m450:  'screen and (max-width: 450px)';
-$m419:  'screen and (max-width: 419px)';
-$m400:  'screen and (max-width: 400px)';
-$m380:  'screen and (max-width: 380px)';
-$m320:  'screen and (max-width: 320px)';
+@mixin respond($breakpoint) {
+	@if $breakpoint == 320 {
+		@media only screen and (max-width: 320px) { @content };  
+	}
+	@if $breakpoint == 400 {
+		@media only screen and (max-width: 400px) { @content };  
+	}
+	@if $breakpoint == 480 {
+			@media only screen and (max-width: 480px) { @content };  
+	}
+	@if $breakpoint == 600  {
+		@media only screen and (max-width: 600px) { @content };    
+	}
+	@if $breakpoint == 700  {
+			@media only screen and (max-width: 700px) { @content };    
+	}
+	@if $breakpoint == 768  {
+		@media only screen and (max-width: 767px) { @content };    
+	}
+	@if $breakpoint == 900 {
+			@media only screen and (max-width: 900px) { @content };   
+	}
+}
 
 
 
