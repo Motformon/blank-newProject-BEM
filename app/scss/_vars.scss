@@ -3,7 +3,7 @@
 
 $default-font: "roboto-example", sans-serif;
 
-$accent: #5AB613;
+$accent: #24a01f;
 $text: #616974;
 
 
@@ -34,6 +34,12 @@ $text: #616974;
 	}
 	@if $breakpoint == 900 {
 			@media only screen and (max-width: 900px) { @content };   
+	}
+	@if $breakpoint == 1024 {
+			@media only screen and (max-width: 1024px) { @content };   
+	}
+	@if $breakpoint == 1200 {
+			@media only screen and (max-width: 1200px) { @content };   
 	}
 }
 
