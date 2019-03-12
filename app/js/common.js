@@ -1,23 +1,28 @@
 $(function() {
 
-	//popups
+	$('.modal').modal();
+	$('.sidenav').sidenav();
 
-	$('.header__btn').click(function(event) {
-		$('.popup-nameClass').fadeIn("slow");
-		$('body').css('overflow-y','hidden');
-	});
-	
-	$('.popup-nameClass__close').click(function(event) {
-		$(".popup-nameClass").fadeOut('slow');
-		$('body').css('overflow-y','auto');
-	});
-	
-	$('.popup-nameClass__mask').click(function(event) {
-		$(".popup-nameClass").fadeOut('slow');
-		$('body').css('overflow-y','auto');
-	});
+	// $('.modal-order__data-phone').inputmask("+7 (999) 999 99 99");
+
+	// $('.header__slider').slick({
+	// 	arrows: false,
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 2000,
+	// });
 
 });
+
+// var phoneMask = ['+', '7' ,'(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
+
+// var myInput = document.querySelector('.modal-order__data-phone')
+
+// var maskedInputController = vanillaTextMask.maskInput({
+// 	inputElement: myInput,
+// 	mask: phoneMask
+// })
 
 
 $(window).scroll(function () {

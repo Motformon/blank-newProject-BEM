@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>site name </title>
+	<title>Шаблон</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,29 +28,49 @@
 
 <body>
 
+
+	<ul id="slide-out" class="sidenav hide-on-med-and-up">
+		<ul class="sidenav__nav">
+			<li class="sidenav--elem"><a href="" class="sidenav--link">Главная</a></li>
+			<li class="sidenav--elem"><a href="" class="sidenav--link">Главная</a></li>
+			<li class="sidenav--elem"><a href="" class="sidenav--link">Главная</a></li>
+			<li class="sidenav--elem"><a href="" class="sidenav--link">Главная</a></li>
+			<li class="sidenav--elem"><a href="" class="sidenav--link">Главная</a></li>
+		</ul>
+	</ul>
+	<a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up"><i class="fas fa-bars"></i></a>
+
 	<header class="header">
-		<h1 class="header__title">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolsit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
-		<button class="btn header__btn">Купить</button>
-		<input type="text" class="input header__input-name">
+		123
 	</header>
 
+	<main class="main">
+		
+	</main>
 
 	<footer class="footer">
+	
+	</footer> 
 
-	</footer>
+	<a class="fixed-modal waves-effect waves-light modal-trigger btn" href="#modal1"><i class="fas fa-phone"></i> Заказать</a>
 
-	<div class="popup-nameClass">
-		<div class="popup-nameClass__mask"></div>
-		<div class="popup-nameClass__window">
-			<div class="popup-nameClass__close"></div>
-			<form id="order-popup-nameClass" class="popup-nameClass__form-order" method="POST" onsubmit='return false;'>
-				<input class='popup-nameClass__form-inf' type="text" name="name" placeholder="Ваше имя" required>
-				<input class='popup-nameClass__form-inf' type="text" name="phone" placeholder="Ваш телефон" required>
-				<input class='popup-nameClass__button btn' type="submit" value="Оставить заявку">
+  <div id="modal1" class="modal modal-order">
+		<a href="#!" class="modal-close"><i class="fas fa-times-circle"></i></a>
+		<div class="modal-order__content">
+			<form class="modal-order__content-form" onsubmit='return false;'>
+				<p class="modal-order__title">Заказать звонок</p>
+				<div class="input-field">
+					<input id="name" type="text" class="validate">
+					<label for="name">Ваше имя</label>
+				</div>
+				<div class="input-field">
+					<input id="phone" type="tel" class="modal-order__data-phone validate" required>
+					<label for="phone">Ваш телефон</label>
+				</div>
+				<input type="submit" class="modal-order__btn btn waves-effect waves-light" value='Отправить' onclick='sd();'>
 			</form>
 		</div>
 	</div>
-
 
 	<div class="top-scroll"></div>
 

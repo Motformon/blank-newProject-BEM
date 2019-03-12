@@ -18,14 +18,14 @@ var gulp = require('gulp'),
 
 gulp.task('browser-sync', function () {
 	browsersync({
-		proxy: "nameSiteInOpenserver", //Для php - openserver Proxy - имя сервера  
-		notify: false
+		// proxy: "nameSiteInOpenserver", //Для php - openserver Proxy - имя сервера  
+		// notify: false
 
 
-		// server: {
-		// 	baseDir: 'app'
-		// },
-		// notify: false,
+		server: {
+			baseDir: 'app'
+		},
+		notify: false,
 		// open: false,
 		// tunnel: true,
 		// tunnel: "frontendMotformon", //Demonstration page: http://projectname.localtunnel.me
@@ -46,8 +46,16 @@ gulp.task('styles', function () {
 gulp.task('js', function () {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/swiper/swiper.min.js',
-		'app/libs/nouislider/nouislider.min.js',
+		'app/libs/slick/slick.min.js',
+		'app/libs/materialize/js/global.js',
+		'app/libs/materialize/js/anime.min.js',
+		'app/libs/materialize/js/cash.js',
+		'app/libs/materialize/js/component.js',
+		'app/libs/materialize/js/waves.js',
+		'app/libs/materialize/js/modal.js',
+		'app/libs/materialize/js/sidenav.js',
+		'app/libs/materialize/js/forms.js',
+		'app/libs/text-mask/vanilla/dist/vanillaTextMask.js',
 		'app/js/common.js', // Always at the end
 	])
 		.pipe(concat('scripts.min.js'))

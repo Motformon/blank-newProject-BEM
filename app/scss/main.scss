@@ -1,7 +1,6 @@
 @import "vars";
 @import "fonts";
 @import "libs";
-@import "animation";
 
 ::placeholder {
 	color: #666;
@@ -20,22 +19,13 @@
     box-sizing: inherit;
 }
 
-html {
-	font-size: 62.5%; //10px
-	@include respond(900) {
-		font-size: 56.25%; //9px
-	}
-	@include respond(600) {
-		font-size: 50%; //8px
-	}
-}
 
 body {
 	//min-width: 320px;
 	position: relative;
-	line-height: 1.4;
+	line-height: 1.2;
+	font-size: 16px;
 	font-family: $default-font;
-	font-size: 1.6rem;
 	//overflow-x: hidden;
 	box-sizing: border-box;
 	input, textarea {
@@ -50,21 +40,44 @@ body {
 	}
 }
 
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 
 b, strong {
 	font-weight: bold;
 }
 
+h3 {
+	color: $accent;
+}
 
+.main .container {
+	background-color: #F8F5F2;
+}
+
+ 
+	/* label focus color */
+	.input-field input:focus + label {
+		color: $accent!important;
+	}
+	/* label underline focus color */
+	.input-field input:focus {
+		border-bottom: 1px solid $accent!important;
+		box-shadow: 0 1px 0 0 $accent!important;
+	}
+	
 @import "_components/smallComp";	//components
-@import "_components/breadcrumbs";	
 @import "_components/scrollTop";	
-@import "_components/popup";	
+@import "_components/sidenav";	
+@import "_components/modal-order";	
+
 
 // blocks
 
-@import "_blocks/header"; //Start 
-
+@import "_blocks/header"; //Start
 
 
 @import "_blocks/footer"; //End
