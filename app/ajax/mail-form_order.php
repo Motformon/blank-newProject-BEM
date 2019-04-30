@@ -1,5 +1,5 @@
 <?php
-$to = "Miha26russ@yandex.ru";
+$to = "email";
 $order = "Заявки site.com от " . date('Y-m-d\ H:i:s'); 
 $sitename  = "site.com";
 $subject   = " \"$sitename\" $order";
